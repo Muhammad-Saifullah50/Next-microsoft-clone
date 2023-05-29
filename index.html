@@ -6,31 +6,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
+    <link rel="SHORTCUT ICON" href="/favicon.ico?v2" type="image/x-icon" />
     <title>Microsoft - Official Home Page</title>
 </head>
 
-<body>
-    <div class="navbar flex justify-between  items-center p-2">
-        <div class="flex justify-center items-center">
-            <div class="hamburger p-4 cursor-pointer">
+<body class="bg-slate-50">
+    <div class="navbar flex justify-between  items-center font-light text-sm font-sans ">
+        <div class="flex justify-center items-center md:order-2">
+            <div class="hamburger p-4 cursor-pointer md:hidden">
                 <div class="line h-0.5  bg-black w-6 my-1"></div>
                 <div class="line h-0.5  bg-black w-6 my-1"></div>
                 <div class="line h-0.5  bg-black w-6 my-1"></div>
             </div>
-            <div class="search">
-                Search
+            <div class="search p-4 md:hidden">
+                <img class="h-9 w-9" src="search.png" alt="search">
             </div>
         </div>
-        <div class="logo text-center">
-            Microsoft
+        <div class="logo flex text-center md:order-1 md:p-4">
+            <img class="h-5 w-39" src="/microsoft.png" alt="ms">
+            <div class="nav hidden md:block md:order-2">
+                <ul class="flex justify-between items-center px-5">
+                    <li class="px-3 hover:underline decoration-black decoration-2 underline-offset-4">Microsoft 365</li>
+                    <li class="px-3 hover:underline decoration-black decoration-2 underline-offset-4">Office</li>
+                    <li class="px-3 hover:underline decoration-black decoration-2 underline-offset-4">Windows</li>
+                    <li class="px-3 hover:underline decoration-black decoration-2 underline-offset-4">Support</li>
+                </ul>
+            </div>
         </div>
-        <div class="flex justify-center items-center">
-            <div class="cart p-4 flex text-center">
-                Cart 
+
+        <div class="flex justify-center items-center md:order-3">
+            <div class="hidden lg:block search p-4 ">
+                All Microsoft
             </div>
-            <div class="account  text-center">
-                Account
+
+            <div class="hidden md:block search  ">
+                <img class="h-9 w-9" src="search.png" alt="">
             </div>
+            <div class="cart p-2 ">
+                <img class="h-9 w-9" src="cart.png" alt="">
+            </div>
+            <div class="account p-2 ">
+                <img class="h-9 w-9" src="account.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="slider md:relative md:-z-10">
+        <img class="md:w-full md:h-[35rem] max-w-full	" src="/ai.jpg" alt="ai">
+    </div>
+
+    <div
+        class="desc flex flex-col md:-mt-10 px-5 py-3 md:relative md:z-20 bg-white w-[100%] md:w-[95%] m-auto md:px-10 md:py-10 md:shadow-slate-400 shadow-md">
+        <h2 class="font-medium text-2xl mb-3">Announcing the next wave of AI innovation </h2>
+        <p>The new Microsoft Bing and Edge will soon feature more visual search responses, chat history, and persistent
+            chat within Edge. We are also adding actions to help people complete tasks.</p>
+        <button class="bg-blue-700 rounded-sm mt-4 w-1/2 h-10 px-2 py-2 text-center text-white md:w-3/12">Learn more
+            about it</button>
+    </div>
+    <hr class="md:hidden">
+    <div class="products flex flex-col ">
+        <div class="product-item flex flex-col px-3 py-3 ">
+
+            <img class=" mx-auto" src="/windows11.jpg" alt="windows11">
+            <h2 class="py-3 text-xl font-semibold">Designed for life today - and tomorrow</h2>
+            <p class="py-3">The next-generation of games. Your goals. Friends and family. Windows 11 was made to bring
+                you closer to everything you love.</p>
+            <a class="py-3 text-blue-600 hover:underline-offset-2" href="#">See if your PC is ready</a>
+        </div>
+
+        <div class="product-item flex flex-col px-3 py-3 ">
+
+            <img class=" mx-auto" src="/edge.jpg" alt="windows11">
+            <h2 class="py-3 text-xl font-semibold">Microsoft Edge</h2>
+            <p class="py-3">World-class performance with more privacy, more productivity and more value while you
+                browse.</p>
+            <a class="py-3 text-blue-600 hover:underline-offset-2" href="#">Download Now</a>
+        </div>
+        <div class="product-item flex flex-col px-3 py-3 ">
+
+            <img class=" mx-auto" src="/onedrive.jpeg" alt="windows11">
+            <h2 class="py-3 text-xl font-semibold">Microsoft OneDrive</h2>
+            <p class="py-3">
+                Save your files and photos to OneDrive and access them from any device, anywhere. </p>
+            <a class="py-3 text-blue-600 hover:underline-offset-2" href="#">Learn more</a>
+        </div>
+        <div class="product-item flex flex-col px-3 py-3 ">
+
+            <img class=" mx-auto" src="/onenote.jpg" alt="windows11">
+            <h2 class="py-3 text-xl font-semibold">OneNote</h2>
+            <p class="py-3">
+                Organise your notes and your life .            </p>
+            <a class="py-3 text-blue-600 hover:underline-offset-2" href="#">Learn more</a>
         </div>
     </div>
 
